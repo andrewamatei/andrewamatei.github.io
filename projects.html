@@ -5,10 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects | Andrew</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      margin-top: 0;
+    }
+
+    .card-content p {
+      margin: 10px 0;
+      font-size: 0.95rem;
+    }
+
+    .card-content a {
+      display: inline-block;
+      color: #007acc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Project Portfolio</h1>
+    <h1>My Projects</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
@@ -17,23 +63,36 @@
   </header>
 
   <main>
-    <section>
-      <h2>Predicting Infective Endocarditis</h2>
-      <p>Machine learning model using MIMIC-II data to predict bacterial endocarditis. Tools used: Python, XGBoost, SHAP, 5-fold cross-validation.</p>
-      <a href="https://github.com/yourusername/endocarditis-prediction" target="_blank">View on GitHub</a>
-    </section>
+    <div class="card-grid">
 
-    <section>
-      <h2>Pricing Elasticity for R.W. Knudsen</h2>
-      <p>Analyzed price sensitivity and promotional effectiveness in the premium juice category. Used Python, pandas, and matplotlib for modeling and Power BI for dashboards.</p>
-      <a href="https://github.com/yourusername/rwknudsen-pricing" target="_blank">View Notebook</a>
-    </section>
+      <div class="card">
+        <img src="assets/project1.png" alt="Endocarditis Prediction">
+        <div class="card-content">
+          <h3>Predicting Infective Endocarditis</h3>
+          <p>Used MIMIC-II data and XGBoost to identify high-risk patients. Built a clinical decision support tool.</p>
+          <a href="https://github.com/yourusername/endocarditis-prediction" target="_blank">View Project</a>
+        </div>
+      </div>
 
-    <section>
-      <h2>Student Retention Dashboard (Nearpeer)</h2>
-      <p>Designed an interactive Power BI dashboard for early identification of at-risk students. Improved intervention accuracy by 40%.</p>
-      <a href="https://public.tableau.com/app/profile/yourprofile" target="_blank">View Dashboard</a>
-    </section>
+      <div class="card">
+        <img src="assets/project2.png" alt="Pricing Elasticity Dashboard">
+        <div class="card-content">
+          <h3>Pricing Elasticity for R.W. Knudsen</h3>
+          <p>Analyzed pricing sensitivity for CPG using Python and Power BI. Recommended margin-safe pricing zones.</p>
+          <a href="https://github.com/yourusername/rwknudsen-pricing" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/project3.png" alt="Nearpeer Retention Dashboard">
+        <div class="card-content">
+          <h3>Student Retention Dashboard</h3>
+          <p>Built a Power BI dashboard for Nearpeer to track at-risk students and improve outreach timing.</p>
+          <a href="https://public.tableau.com/app/profile/yourprofile" target="_blank">View Dashboard</a>
+        </div>
+      </div>
+
+    </div>
   </main>
 
   <footer>
