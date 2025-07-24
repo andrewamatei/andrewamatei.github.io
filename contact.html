@@ -5,6 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact | Andrew</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .contact-container {
+      max-width: 700px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-item {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+
+    .contact-item a {
+      color: #007acc;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+
+    .icon {
+      font-weight: bold;
+      margin-right: 10px;
+      display: inline-block;
+      width: 25px;
+    }
+
+    @media (max-width: 600px) {
+      .contact-container {
+        margin: 20px;
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -17,13 +56,26 @@
   </header>
 
   <main>
-    <p>📧 Email: <a href="mailto:andrewamartei@gmail.com">andrewamartei@gmail.com</a></p>
-    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/andrewamartei" target="_blank">linkedin.com/in/andrewamartei</a></p>
-    <p>💼 Resume: <a href="assets/andrew_resume.pdf" target="_blank">Download PDF</a></p>
+    <div class="contact-container">
+      <div class="contact-item">
+        <span class="icon">📧</span>
+        <a href="mailto:andrewamartei@gmail.com">andrewamartei@gmail.com</a>
+      </div>
+
+      <div class="contact-item">
+        <span class="icon">🔗</span>
+        <a href="https://www.linkedin.com/in/andrewamartei" target="_blank">linkedin.com/in/andrewamartei</a>
+      </div>
+
+      <div class="contact-item">
+        <span class="icon">📄</span>
+        <a href="assets/andrew_resume.pdf" target="_blank">Download Resume (PDF)</a>
+      </div>
+    </div>
   </main>
 
   <footer>
-    <p>Let’s work on something meaningful together.</p>
+    <p>© 2025 Andrew. Let’s work on something meaningful together.</p>
   </footer>
 </body>
 </html>
