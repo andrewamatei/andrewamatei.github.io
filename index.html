@@ -9,26 +9,27 @@
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background-color: #f4f4f4;
+      padding: 0;
+      background-color: #f4f6f8;
       color: #222;
-      line-height: 1.6;
     }
 
     header {
-      background-color: #1e1e1e;
+      background-color: #121212;
       color: white;
-      padding: 40px 20px;
       text-align: center;
+      padding: 60px 20px 30px;
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin-bottom: 10px;
     }
 
     header p {
       font-size: 1.2rem;
       margin-top: 0;
+      color: #ccc;
     }
 
     nav {
@@ -36,29 +37,31 @@
     }
 
     nav a {
-      margin: 0 15px;
       color: #00bcd4;
+      margin: 0 15px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      font-size: 1rem;
     }
 
     nav a:hover {
       text-decoration: underline;
     }
 
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      background: white;
-      padding: 30px;
+    .container {
+      max-width: 780px;
+      margin: 50px auto;
+      padding: 40px;
+      background: #fff;
       border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     }
 
     .intro {
-      text-align: center;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
+      line-height: 1.7;
       margin-bottom: 40px;
+      text-align: center;
       color: #444;
     }
 
@@ -67,24 +70,24 @@
     }
 
     section h2 {
-      color: #333;
+      font-size: 1.4rem;
       margin-bottom: 15px;
-      font-size: 1.5rem;
+      color: #333;
     }
 
     ul {
       padding-left: 20px;
     }
 
-    ul li {
+    li {
       margin-bottom: 10px;
     }
 
     footer {
-      background-color: #1e1e1e;
+      background-color: #121212;
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 20px;
     }
 
     footer a {
@@ -94,17 +97,18 @@
 
     @media (max-width: 600px) {
       header h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
 
-      main {
+      .container {
         margin: 20px;
-        padding: 20px;
+        padding: 25px;
       }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Hi, I'm Andrew</h1>
     <p>Data Analyst with an IT background. I turn data into decisions.</p>
@@ -115,20 +119,17 @@
     </nav>
   </header>
 
-  <main>
+  <main class="container">
     <div class="intro">
-      <p>
-        I’m a data analyst with 10+ years of experience in IT operations and analytics.
-        I help businesses turn raw data into clear insights that improve revenue, reduce cost, and drive smarter decisions.
-        I specialize in Python, SQL, Power BI, and Tableau for modeling, dashboards, and data storytelling across finance, education, and CPG.
-        I hold a master’s in analytics (GPA 4.0) and bring a track record of delivering results through practical, actionable insights.
-      </p>
+      I’m a data analyst with 10+ years of experience in IT operations and analytics.
+      I help businesses turn raw data into clear insights that improve revenue, reduce cost, and support smart decisions.
+      I work with Python, SQL, Power BI, and Tableau across finance, education, and CPG.
+      I hold a master’s in analytics (GPA 4.0) and deliver insights that work.
     </div>
 
     <section>
       <h2>About Me</h2>
-      <p>I specialize in data modeling, predictive analytics, and dashboard design.</p>
-      <p>My work spans healthcare, CPG, and EdTech domains.</p>
+      <p>I focus on data modeling, predictive analytics, and dashboards. My work spans healthcare, CPG, and EdTech.</p>
       <p><strong>Tools I use:</strong> Python, SQL, Power BI, Tableau, Git, Excel.</p>
     </section>
 
