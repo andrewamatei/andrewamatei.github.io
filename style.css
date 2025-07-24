@@ -1,36 +1,121 @@
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
-  margin: 20px;
-  background-color: #f4f4f4;
-  color: #222;
-  line-height: 1.6;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.7;
+  font-size: 16px;
+  padding: 0 20px;
 }
 
+/* Header & Footer */
 header, footer {
-  background: #1c1c1c;
-  color: white;
-  padding: 20px;
+  background-color: #121212;
+  color: #fff;
   text-align: center;
+  padding: 40px 20px 30px;
 }
 
-nav a {
-  margin: 0 15px;
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #bbb;
+}
+
+footer {
+  font-size: 0.95rem;
+  padding: 20px;
+}
+
+footer a {
   color: #00bcd4;
   text-decoration: none;
 }
 
+/* Navigation */
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  margin: 0 18px;
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main layout */
 main {
   max-width: 800px;
-  margin: auto;
-  padding: 20px;
-  background: white;
-  border-radius: 6px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
 }
 
 section {
   margin-bottom: 40px;
 }
 
+section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* Lists */
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Links */
 a {
   color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p, nav a {
+    font-size: 0.95rem;
+  }
+
+  main {
+    padding: 25px;
+    margin: 25px 10px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px 10px;
+  }
 }
