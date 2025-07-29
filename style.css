@@ -1,3 +1,19 @@
+/* Variables for easy theme changes - Adjusted to your preferred dark colors and accents */
+:root {
+    --primary-color: #00bcd4; /* A vibrant blue, similar to the highlight in your images */
+    --secondary-color: #4a148c; /* A deep purple for accents, complementing the blue */
+    --accent-color: #f06292; /* A soft pink/rose for subtle highlights or interactive elements */
+
+    --background-dark: #121212; /* Very dark background, almost black */
+    --background-card: #1e1e1e; /* Slightly lighter dark for cards */
+    --text-light: #e0e0e0; /* Light grey for main text on dark backgrounds */
+    --text-muted: #aaaaaa; /* Muted grey for secondary text */
+    --border-dark: #333333; /* Dark border for subtle separation */
+
+    --gradient-primary: linear-gradient(90deg, #00bcd4, #4a148c); /* Blue to purple gradient for highlights */
+    --shadow-dark: rgba(0, 0, 0, 0.4);
+    --shadow-card: rgba(0, 0, 0, 0.3);
+}
 /* Reset */
 * {
   margin: 0;
