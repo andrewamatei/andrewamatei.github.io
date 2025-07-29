@@ -1,4 +1,4 @@
-/* Reset & Fonts */
+/* Reset and base styling */
 * {
   margin: 0;
   padding: 0;
@@ -6,95 +6,170 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  color: #1a1a1a;
-  background: linear-gradient(to right, #f9f9fb, #f3f3f7);
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f6f8fa;
+  color: #1c1c1c;
   line-height: 1.6;
 }
 
-/* Hero Section */
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
-  background: linear-gradient(to right, #f5f7fa, #e8ecf4);
-  color: #222;
-  padding: 0 1rem;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.hero h1 span {
-  color: #3a86ff;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 2rem;
-  max-width: 600px;
-}
-
-.hero .buttons {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.button {
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 8px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.button.primary {
-  background: #3a86ff;
+/* Header */
+header {
+  background-color: #121212;
   color: white;
+  text-align: center;
+  padding: 60px 20px 40px;
 }
 
-.button.primary:hover {
-  background: #265ecf;
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-.button.secondary {
-  background: #e0e0e0;
-  color: #222;
+header p {
+  font-size: 1.1rem;
+  color: #ccc;
 }
 
-.button.secondary:hover {
-  background: #c7c7c7;
+nav {
+  margin-top: 10px;
 }
 
-.button.resume {
-  margin-top: 2rem;
-  background: transparent;
-  border: 2px solid #3a86ff;
-  color: #3a86ff;
+nav a {
+  color: #4aa7c1;
+  text-decoration: none;
+  margin: 0 10px;
   font-weight: 500;
 }
 
-.button.resume:hover {
-  background: #3a86ff;
+nav a:hover {
+  color: #67cbe8;
+}
+
+/* Main layout */
+main {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Section titles */
+section {
+  margin-bottom: 50px;
+}
+
+section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e1e4e8;
+  color: #333;
+}
+
+/* Paragraphs and text */
+section p {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+ul {
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Project cards */
+.project-card {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-left: 4px solid #4aa7c1;
+  background-color: #f9fcfd;
+  border-radius: 6px;
+}
+
+.project-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2b2b2b;
+}
+
+.project-card p {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.project-tags {
+  font-size: 0.9rem;
+  color: #6a6a6a;
+}
+
+/* Experience styling */
+.job-title {
+  font-weight: 600;
+  color: #2c2c2c;
+}
+
+.date-range {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #121212;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #4aa7c1;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #67cbe8;
+}
+
+/* Resume button */
+.resume-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: 2px solid #4aa7c1;
+  color: #4aa7c1;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #4aa7c1;
   color: white;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.5rem;
+  body {
+    padding: 10px;
   }
-  .hero p {
-    font-size: 1rem;
+
+  main {
+    padding: 20px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 8px;
   }
 }
