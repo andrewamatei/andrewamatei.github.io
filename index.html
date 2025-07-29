@@ -2,60 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Andrew Amartei | Data Analyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andrew [Last Name] | Data Analyst Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Hi, I'm Andrew</h1>
-    <p>Data Analyst with an IT background. I turn data into decisions.</p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <header class="hero">
+    <div class="container">
+      <h1>Hi, I'm <span class="highlight">Andrew [Last Name]</span></h1>
+      <p>I help make smarter decisions with data. Data Analyst with an IT edge.</p>
+      <div class="buttons">
+        <a href="#projects" class="btn btn-soft">View My Work</a>
+        <a href="#contact" class="btn btn-muted">Get In Touch</a>
+      </div>
+      <a href="resume.pdf" class="resume-download">Download Resume</a>
+    </div>
   </header>
 
-  <main>
-    <section class="intro">
-      <p>
-        I’m a data analyst with 10+ years of experience in IT and analytics. I help businesses turn raw data into clear insights that drive smarter decisions, reduce cost, and improve revenue.
-        I specialize in Python, SQL, Power BI, and Tableau for dashboards and modelling in finance, CPG, healthcare, and education.
-        I hold a master’s in analytics (GPA 4.0) and bring a track record of delivering results through practical, actionable insights.
-      </p>
-    </section>
-
-    <section>
-      <h2>Featured Skills</h2>
-      <ul>
-        <li>Machine learning (XGBoost, CatBoost, Random Forest)</li>
-        <li>Pricing analytics for CPG brands</li>
-        <li>Dashboards and data storytelling with Power BI & Tableau</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="card">
-          <h3>RW Knudsen Pricing Analytics</h3>
-          <p>Built elasticity models to guide promotional pricing for premium juices across retailers.</p>
-        </div>
-        <div class="card">
-          <h3>Pneumonia Risk Prediction</h3>
-          <p>Used ICU clinical data to build early-warning models for bacterial pneumonia using XGBoost and Random Forest.</p>
-        </div>
-        <div class="card">
-          <h3>Nearpeer Student Retention</h3>
-          <p>Analyzed engagement data to predict at-risk students and improve college enrollment outcomes.</p>
+  <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="project1.png" alt="Project 1">
+        <h3>R.W. Knudsen Pricing Strategy</h3>
+        <p>Used Python and R to analyze pricing elasticity across retailers. Delivered a dashboard to guide pricing and promotional campaigns.</p>
+        <div class="tags">
+          <span>Python</span>
+          <span>R</span>
+          <span>Tableau</span>
         </div>
       </div>
-    </section>
-  </main>
+      <div class="project-card">
+        <img src="project2.png" alt="Project 2">
+        <h3>Nearpeer Retention Modeling</h3>
+        <p>Developed a classification model to identify at-risk students based on platform activity, helping improve retention by 12%.</p>
+        <div class="tags">
+          <span>Logistic Regression</span>
+          <span>SQL</span>
+          <span>scikit-learn</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience-section">
+    <h2>Work Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Data Analyst | Nearpeer</h3>
+        <span>2024 - 2025</span>
+        <ul>
+          <li>Built student success models using usage data</li>
+          <li>Created stakeholder dashboards for retention trends</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <h3>IT Manager | B-One Savings & Loans</h3>
+        <span>2018 - 2022</span>
+        <ul>
+          <li>Led infrastructure upgrades across 3 locations</li>
+          <li>Automated daily reports with SQL and Python</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="education-section">
+    <h2>Education</h2>
+    <div class="education-item">
+      <h3>MPS in Analytics</h3>
+      <p>Northeastern University, 2025</p>
+    </div>
+    <div class="education-item">
+      <h3>MSc in MIS</h3>
+      <p>Coventry University</p>
+    </div>
+  </section>
+
+  <section class="toolkit-section">
+    <h2>My Toolkit</h2>
+    <div class="toolkit-tags">
+      <span>Python</span>
+      <span>SQL</span>
+      <span>R</span>
+      <span>Power BI</span>
+      <span>Tableau</span>
+      <span>scikit-learn</span>
+      <span>Git</span>
+      <span>PRINCE2</span>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Get In Touch</h2>
+    <p>Email me at <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <div class="socials">
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2025 Andrew Amartei | <a href="contact.html">Get in touch</a></p>
+    <p>&copy; 2025 Andrew [Last Name]. All rights reserved.</p>
   </footer>
 </body>
 </html>
