@@ -140,6 +140,95 @@ ul {
   margin-bottom: 8px;
 }
 
+/* Education Section */
+#education {
+    background-color: var(--background-dark); /* Explicitly dark */
+}
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.education-item {
+    background-color: var(--background-card); /* Dark card background */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-card);
+    flex: 1;
+    min-width: 280px;
+    max-width: 450px;
+    text-align: center;
+    border-bottom: 3px solid var(--primary-color); /* Bottom accent border */
+}
+
+.education-item h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.education-details {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+.education-dates {
+    font-size: 0.9em;
+    color: var(--text-muted);
+}
+
+/* Skills Section */
+#skills {
+    background-color: var(--background-dark); /* Explicitly dark */
+    padding-bottom: 80px; /* Adjust bottom padding if needed, to control space below skills */
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Set to center for the desired alignment */
+    gap: 8px; /* Adjusted gap for better visual balance */
+    margin-top: 15px; /* Slightly reduced top margin */
+    max-width: 900px; /* Reintroduced a reasonable max-width to control wrapping */
+    margin-left: auto; /* Centers the container */
+    margin-right: auto;
+    align-content: flex-start; /* Ensures rows are packed at the start, preventing large vertical gaps */
+    align-items: center; /* Aligns items to the center of the cross-axis (vertically within their line) */
+    line-height: 1.2; /* Slightly increased line height for better readability */
+}
+
+.skill {
+    background-color: var(--secondary-color); /* Using secondary color for skills */
+    color: #ffffff;
+    padding: 7px 14px; /* Adjusted padding for a balanced size */
+    border-radius: 20px;
+    font-size: 0.88em; /* Adjusted font size for readability */
+    font-weight: 500;
+    box-shadow: 0 2px 4px var(--shadow-dark);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    white-space: nowrap; /* Prevents text inside tags from wrapping */
+}
+
+.skill:hover {
+    background-color: #6a1b9a; /* Darker secondary on hover */
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .skills-container {
+        gap: 6px; /* Slightly smaller gap on smaller screens */
+        padding: 0 10px; /* Adjust padding to fit more tightly */
+    }
+    .skill {
+        padding: 6px 12px; /* Adjusted padding for tags on mobile */
+        font-size: 0.82em; /* Adjusted font size on mobile */
+    }
+}
+
 .resume-button {
   display: inline-block;
   margin-top: 10px;
