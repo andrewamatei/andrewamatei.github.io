@@ -162,6 +162,49 @@ ul {
   margin-bottom: 8px;
 }
 
+/* =====================
+    Experience Section
+  ======================*/
+#experience {
+  background-color: var(--background-dark);
+  color: var(--text-light);
+  padding: 40px 20px;
+}
+
+.experience-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experience-item {
+  background-color: var(--background-card);
+  border-left: 4px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px var(--shadow-card);
+}
+
+.experience-item h3 {
+  color: var(--primary-color);
+  margin-bottom: 8px;
+}
+
+.experience-item p {
+  color: var(--text-light);
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.experience-dates {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  display: block;
+}
+
 /* ===============
    EDUCATION SECTION
    =============== */
