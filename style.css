@@ -105,18 +105,24 @@ ul {
 /* ===============
    ABOUT SECTION
    =============== */
+#about {
+  background-color: var(--background-dark);
+  color: var(--text-light);
+  padding: 40px 20px;
+}
+
 .about-content {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 40px;
-  flex-wrap: wrap;
-  padding: 40px 20px;
   max-width: 1000px;
   margin: auto;
+  flex-wrap: nowrap;
 }
 
 .about-img {
+  flex-shrink: 0;
   width: 180px;
   height: 180px;
   object-fit: cover;
@@ -125,7 +131,7 @@ ul {
   box-shadow: 0 0 12px rgba(0, 209, 209, 0.4);
 }
 
-.about-content p {
+.about-text {
   max-width: 600px;
   line-height: 1.7;
   font-size: 1.05rem;
