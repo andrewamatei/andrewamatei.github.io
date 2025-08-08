@@ -135,31 +135,44 @@ ul {
 /* ===============
    PROJECT CARD
    =============== */
+#projects {
+  background-color: var(--background-dark);
+  color: var(--text-light);
+  padding: 40px 20px;
+}
+
+.projects-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .project-card {
-  margin-bottom: 30px;
-  padding: 20px;
-  background: #1e1e1e;
+  background-color: var(--background-card);
   border-left: 4px solid var(--primary-color);
-  border-radius: 10px;
+  border-radius: 8px;
+  padding: 20px;
   box-shadow: 0 4px 8px var(--shadow-card);
 }
 
-.project-tags {
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  font-style: italic;
-}
-
-.job-title {
-  font-weight: bold;
-  font-size: 1.1rem;
-  color: #fff;
-}
-
-.date-range {
-  font-size: 0.95rem;
-  color: var(--text-muted);
+.project-card h3 {
+  color: var(--primary-color);
   margin-bottom: 8px;
+}
+
+.project-card p {
+  color: var(--text-light);
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.project-tags {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  display: block;
 }
 
 /* =====================
