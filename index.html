@@ -1,18 +1,22 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Andrew Amartei | Data Analyst Portfolio</title>
+
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 </head>
+
 <body>
   <header class="hero" id="home">
     <h1>Hi, I'm Andrew</h1>
     <p class="subtitle">I help make smarter decisions with data. Data Analyst with an IT edge.</p>
-    <nav>
+
+    <nav class="sticky-nav site-nav" aria-label="Primary">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
@@ -23,6 +27,7 @@
   </header>
 
   <main>
+    <!-- About -->
     <section id="about">
       <h2>About Me</h2>
       <div class="about-content">
@@ -30,139 +35,135 @@
         <div class="about-text">
           <p>
             I'm a data analyst with 10+ years of experience in IT and analytics. I help businesses turn raw data into insights that drive smarter decisions, reduce cost, and improve revenue. I specialize in Python, SQL, Power BI, and Tableau for dashboards and modeling in finance, CPG, healthcare, and education.
-            </p>
+          </p>
           <p>
             I hold a master’s in analytics and bring a track record of delivering results through practical, actionable insights.
-            </p>
-          </div>
+          </p>
         </div>
-      </section>
+      </div>
+    </section>
 
+    <!-- Projects -->
     <section id="projects">
       <h2>Projects</h2>
       <div class="projects-container">
-        <div class="project-card">
+        <article class="project-card">
           <h3>Pricing Elasticity Modeling – R.W. Knudsen</h3>
           <span class="project-tags">CPG | Python | Tableau</span>
           <p>Analyzed Nielsen sales data to uncover pricing thresholds and promotion impacts. Delivered insights adopted by marketing teams.</p>
-          </div>
-        <div class="project-card">
+        </article>
+
+        <article class="project-card">
           <h3>ClinicalBERT for Pneumonia Prediction</h3>
           <span class="project-tags">Healthcare | NLP | Python</span>
           <p>Fine-tuned ClinicalBERT on ICU notes from MIMIC-III to predict pneumonia risk. Outperformed structured-data models with AUC 0.9974.</p>
-          </div>
-        <div class="project-card">
+        </article>
+
+        <article class="project-card">
           <h3>Nearpeer Retention Modeling</h3>
           <span class="project-tags">Logistic Regression | SQL | scikit-learn</span>
           <p>Developed a classification model to identify at-risk students based on platform activity, helping improve retention by 12%.</p>
-          </div>
-        </div>
-      </section>
+        </article>
+      </div>
+    </section>
 
+    <!-- Experience -->
     <section id="experience">
       <h2>Work Experience</h2>
-      <div>
-        <p class="job-title">Peer Tutor | Northeastern University</p>
-        <p class="date-range">2024 – 2025</p>
-        <ul>
-          <li>Guided students in mastering Python, SQL, Power BI, and modeling techniques</li>
-          <li>Facilitated analytics labs and advised on data cleaning, regression, and dashboard design</li>
+      <div class="experience-container">
+        <article class="experience-item">
+          <h3>Peer Tutor — Northeastern University</h3>
+          <span class="experience-dates">2024 – 2025</span>
+          <ul>
+            <li>Guided students in Python, SQL, Power BI, and modeling techniques</li>
+            <li>Facilitated analytics labs and advised on data cleaning, regression, and dashboard design</li>
           </ul>
-        </div>
-      
-      <div>
-        <p class="job-title">IT Manager | Progress Savings and Loans Ltd</p>
-        <p class="date-range">2020 – 2023</p>
-        <ul>
-          <li>Directed IT infrastructure upgrades, improving system uptime and automating performance tracking</li>
-          <li>Managed enterprise-level systems across departments and led digital process improvements</li>
-          </ul>
-        </div>
-      
-      <div>
-        <p class="job-title">IT Manager | B-One Savings and Loans Ltd, </p>
-        <p class="date-range">2018 – 2020</p>
-        <ul>
-          <li>Designed and maintained secure network architecture, resolving 95% of tech issues within SLA</li>
-          <li>Used analytics to track and optimize ticket response time and user satisfaction</li>
-          </ul>
-        </div>
-      
-      <div>
-        <p class="job-title">IT Manager | Christian Community Microfinance Ltd, </p>
-        <p class="date-range">2011 – 2018</p>
-        <ul>
-          <li>Oversaw multi-branch IT operations and led core banking migration with zero data loss</li>
-          <li>Standardized data backup, compliance audits, and recovery protocols to reduce system risk</li>
-          </ul>
-        </div>
-      </section>
+        </article>
 
+        <article class="experience-item">
+          <h3>IT Manager — Progress Savings and Loans Ltd</h3>
+          <span class="experience-dates">2020 – 2023</span>
+          <ul>
+            <li>Directed IT infrastructure upgrades, improving system uptime and automating performance tracking</li>
+            <li>Managed enterprise systems across departments and led digital process improvements</li>
+          </ul>
+        </article>
+
+        <article class="experience-item">
+          <h3>IT Manager — B-One Savings and Loans Ltd</h3>
+          <span class="experience-dates">2018 – 2020</span>
+          <ul>
+            <li>Designed and maintained secure network architecture, resolving 95% of tech issues within SLA</li>
+            <li>Used analytics to optimize ticket response time and user satisfaction</li>
+          </ul>
+        </article>
+
+        <article class="experience-item">
+          <h3>IT Manager — Christian Community Microfinance Ltd</h3>
+          <span class="experience-dates">2011 – 2018</span>
+          <ul>
+            <li>Oversaw multi-branch IT operations and led core banking migration with zero data loss</li>
+            <li>Standardized backup, compliance audits, and recovery protocols to reduce system risk</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education -->
     <section id="education">
       <h2>Education</h2>
       <div class="education-container">
         <div class="education-item">
           <h3>M.P.S.: Data Analytics</h3>
-          <p class="education-details">Northeastern University - USA</p>
+          <p class="education-details">Northeastern University — USA</p>
           <p class="education-dates">Graduated Mar 2025</p>
-          </div>
+        </div>
         <div class="education-item">
           <h3>M.Sc. Management Information Systems</h3>
-          <p class="education-details">Coventry University - UK</p>
+          <p class="education-details">Coventry University — UK</p>
           <p class="education-dates">Graduated Sept 2024</p>
-          </div>
+        </div>
         <div class="education-item">
           <h3>B.A. Psychology with Philosophy</h3>
-          <p class="education-details">University Of Ghana - GH</p>
+          <p class="education-details">University of Ghana — GH</p>
           <p class="education-dates">Graduated May 2007</p>
-          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
+    <!-- Skills -->
     <section id="skills">
       <h2>My Toolkit</h2>
       <div class="skills-container">
-        <div class="skill">Python</div>
-        <div class="skill">SQL</div>
-        <div class="skill">Microsoft Excel</div>
-        <div class="skill">Power BI</div>
-        <div class="skill">Tableau</div>
-        <div class="skill">Machine Learning</div>
-        <div class="skill">Predictive Modeling</div>
-        <div class="skill">Data Wrangling</div>
-        <div class="skill">Data Visualization</div>
-        <div class="skill">Natural Language Processing (NLP)</div>
-        <div class="skill">Large Language Models (LLMs)</div>
-        <div class="skill">ETL</div>
-        <div class="skill">PostgreSQL</div>
-        <div class="skill">Data Modeling</div>
-        <div class="skill">Business Intelligence (BI)</div>
-        <div class="skill">Customer Insights</div>
-        <div class="skill">Time Series Analysis</div>
-        <div class="skill">NumPy</div>
-        <div class="skill">Pandas</div>
-        <div class="skill">Scikit-learn</div>
-        <div class="skill">Matplotlib</div>
-        <div class="skill">Seaborn</div>
-        <div class="skill">Hugging Face</div>
-        <div class="skill">Open AI</div>
-        <div class="skill">Git</div>
-       </div>
-      </section>
+        <div class="skill">Python</div><div class="skill">SQL</div><div class="skill">Microsoft Excel</div>
+        <div class="skill">Power BI</div><div class="skill">Tableau</div><div class="skill">Machine Learning</div>
+        <div class="skill">Predictive Modeling</div><div class="skill">Data Wrangling</div><div class="skill">Data Visualization</div>
+        <div class="skill">Natural Language Processing (NLP)</div><div class="skill">Large Language Models (LLMs)</div>
+        <div class="skill">ETL</div><div class="skill">PostgreSQL</div><div class="skill">Data Modeling</div>
+        <div class="skill">Business Intelligence (BI)</div><div class="skill">Customer Insights</div>
+        <div class="skill">Time Series Analysis</div><div class="skill">NumPy</div><div class="skill">Pandas</div>
+        <div class="skill">Scikit-learn</div><div class="skill">Matplotlib</div><div class="skill">Seaborn</div>
+        <div class="skill">Hugging Face</div><div class="skill">OpenAI</div><div class="skill">Git</div>
+      </div>
+    </section>
 
+    <!-- Contact -->
     <section id="contact">
       <h2>Contact</h2>
       <p>Let's connect: <a href="mailto:andrewamartei@gmail.com">andrewamartei@gmail.com</a></p>
       <p><a href="https://www.linkedin.com/in/andrewamartei" target="_blank" rel="noopener">linkedin.com/in/andrewamartei</a></p>
       <a href="assets/andrew_resume.pdf" class="resume-button" download>Download Resume (PDF)</a>
     </section>
-    </main>
+  </main>
 
   <footer>
     <p>© 2025 Andrew</p>
   </footer>
 
+  <button id="backToTopBtn" title="Go to top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
   <script src="script.js"></script>
-  <button id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 </body>
 </html>
