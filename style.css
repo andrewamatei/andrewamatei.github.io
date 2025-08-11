@@ -1,3 +1,9 @@
+/* Smooth in-page scroll */
+html { scroll-behavior: smooth; }
+
+/* If your header ever becomes sticky/fixed, this keeps targets visible */
+section { scroll-margin-top: 90px; }  /* adjust if your header height changes */
+
 /* ===============================
    THEME VARIABLES (Dark Base)
    =============================== */
@@ -323,6 +329,12 @@ ul {
 
 #contact a:hover {
   color: var(--accent-color);
+}
+
+/* Active nav link */
+nav a.active {
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
 }
 
 /* ===============
