@@ -1,60 +1,61 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+  const nav = document.querySelector('.sticky-nav') || document.querySelector('header nav');
+  const navLinks = document.querySelectorAll('header nav a');
+  const hero = document.getElementById('home');
+  const backToTopBtn = document.getElementById('backToTopBtn');
+  const sections = document.querySelectorAll('main section[id]');
 
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            const offset = document.querySelector('.sticky-nav').offsetHeight; // Height of sticky nav
+  const getOffset = () => (nav ? nav.offsetHeight : 0);
 
-            // Scroll to the target element with an offset for the sticky nav
-            window.scrollTo({
-                top: targetElement.offsetTop - offset,
-                behavior: 'smooth'
-            });
-        });
+  // Smooth scrolling with sticky offset
+  navLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      const targetId = link.getAttribute('href');
+      if (!targetId || !targetId.startsWith('#')) return;
+      const target = document.querySelector(targetId);
+      if (!target) return;
+
+      e.preventDefault();
+      const y = target.getBoundingClientRect().top + window.pageYOffset - getOffset();
+      window.scrollTo({ top: y, behavior: 'smooth' });
     });
+  });
 
-    // Sticky Navigation
-    const stickyNav = document.querySelector('.sticky-nav');
-    const heroSection = document.getElementById('home');
-    const projectsSection = document.getElementById('projects'); // Get the projects section
+  // Sticky nav after hero
+  const stickyPoint = hero ? hero.offsetHeight : 120;
 
-    // Calculate the point at which the nav should become sticky
-    // This is typically the height of the content *before* the nav
-    const stickyPoint = heroSection.offsetHeight + projectsSection.offsetHeight; // Add height of projects section
-
-    function handleScroll() {
-        if (window.scrollY > stickyPoint) {
-            stickyNav.classList.add('fixed-nav');
-        } else {
-            stickyNav.classList.remove('fixed-nav');
-        }
-
-        // Back to Top button visibility
-        const backToTopBtn = document.getElementById('backToTopBtn');
-        if (window.scrollY > 300) { // Show button after scrolling 300px down
-            backToTopBtn.style.display = 'flex'; // Use flex to center icon
-        } else {
-            backToTopBtn.style.display = 'none';
-        }
+  function onScroll() {
+    // Stick the nav
+    if (nav) {
+      if (window.scrollY > stickyPoint) nav.classList.add('fixed-nav');
+      else nav.classList.remove('fixed-nav');
     }
 
-    window.addEventListener('scroll', handleScroll);
-    // Call on load in case user refreshed part-way down
-    handleScroll();
+    // Back-to-top button
+    if (backToTopBtn) backToTopBtn.style.display = window.scrollY > 300 ? 'flex' : 'none';
 
-
-    // Back to Top Button functionality
-    const backToTopBtn = document.getElementById('backToTopBtn');
-    backToTopBtn.addEventListener('click', function() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
+    // Active nav link
+    let current = null;
+    const offset = getOffset() + 12;
+    sections.forEach(sec => {
+      const top = sec.offsetTop - offset;
+      if (window.scrollY >= top) current = sec.id;
     });
+    navLinks.forEach(a => a.classList.remove('active'));
+    if (current) {
+      const active = document.querySelector(`header nav a[href="#${current}"]`);
+      if (active) active.classList.add('active');
+    }
+  }
 
-    // Removed the problematic contact form submission JavaScript block
-    // The HTML form's 'action' attribute will now handle submission directly to Web3Forms.
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Back to top click
+  if (backToTopBtn) {
+    backToTopBtn.addEventListener('click', () =>
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    );
+  }
 });
