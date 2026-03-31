@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,15 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Andrew Amartei | Data Analyst Portfolio</title>
 
+  <meta
+    name="description"
+    content="Andrew Amartei is a data analyst with a strong IT background. Explore projects in SQL, Python, Power BI, Tableau, machine learning, and business intelligence."
+  />
+
+  <meta property="og:title" content="Andrew Amartei | Data Analyst Portfolio" />
+  <meta
+    property="og:description"
+    content="Data analyst with a strong IT background. View projects in analytics, dashboards, machine learning, and business intelligence."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/preview.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Andrew Amartei | Data Analyst Portfolio" />
+  <meta
+    name="twitter:description"
+    content="Data analyst with a strong IT background. View projects in SQL, Python, Power BI, Tableau, and machine learning."
+  />
+  <meta name="twitter:image" content="images/preview.png" />
+
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <header class="hero" id="home">
     <h1>Hi, I'm Andrew</h1>
-    <p class="subtitle">I help make smarter decisions with data. Data Analyst with an IT edge.</p>
+    <p class="subtitle">I turn data into clear, useful insights for better decisions.</p>
 
     <nav class="sticky-nav site-nav" aria-label="Primary">
       <a href="#about">About</a>
@@ -26,124 +54,266 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <!-- About -->
     <section id="about">
       <h2>About Me</h2>
       <div class="about-content">
-        <img src="images/profile.jpeg" alt="Andrew Amartei" class="about-img" />
+        <img
+          src="images/profile.jpeg"
+          alt="Portrait of Andrew Amartei"
+          class="about-img"
+          width="320"
+          height="320"
+          decoding="async"
+        />
         <div class="about-text">
           <p>
-            I'm a data analyst with 10+ years of experience in IT and analytics. I help businesses turn raw data into insights that drive smarter decisions, reduce cost, and improve revenue. I specialize in Python, SQL, Power BI, and Tableau for dashboards and modeling in finance, CPG, healthcare, and education.
+            I’m a data analyst with a strong background in information technology, IT. I use SQL, Python, Power BI, and Tableau to turn raw data into reporting, dashboards, and decision support tools that teams can actually use.
           </p>
           <p>
-            I hold a master’s in analytics and bring a track record of delivering results through practical, actionable insights.
+            My experience spans healthcare, finance, consumer packaged goods, CPG, and education. I focus on practical analysis, clear communication, and building tools that help people track performance, spot issues early, and make better decisions.
           </p>
         </div>
       </div>
     </section>
 
+    <!-- Featured Project -->
+    <section id="featured-project">
+      <h2>Featured Project</h2>
+      <div class="project-card featured-card">
+        <img
+          src="images/pricing-elasticity.png"
+          alt="Pricing elasticity dashboard preview"
+          class="project-img"
+          loading="lazy"
+          decoding="async"
+          width="800"
+          height="450"
+        />
+        <h3>Pricing Elasticity Analysis, R.W. Knudsen</h3>
+        <span class="project-tags">CPG | Python | Tableau | Regression</span>
+        <p>
+          Analyzed Nielsen sales data to estimate price sensitivity, promotion effects, and retailer-level pricing patterns in the premium juice category.
+        </p>
+        <p>
+          Built regression-based analysis and dashboard views to support pricing decisions and compare promotion scenarios across products and retailers.
+        </p>
+        <div class="project-links">
+          <a
+            href="https://public.tableau.com/views/PricingElasticityDashboard"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Dashboard
+          </a>
+          <a
+            href="https://github.com/andrewamartei/pricing-elasticity"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
     <section id="projects">
       <h2>Projects</h2>
       <div class="projects-container">
 
-        <!-- Project 1 -->
         <div class="project-card">
-          <img src="images/pricing-elasticity.png" alt="Pricing Elasticity Modeling" class="project-img">
-          <h3>Pricing Elasticity Modeling – R.W. Knudsen</h3>
+          <img
+            src="images/pricing-elasticity.png"
+            alt="Pricing elasticity modeling project preview"
+            class="project-img"
+            loading="lazy"
+            decoding="async"
+            width="800"
+            height="450"
+          />
+          <h3>Pricing Elasticity Modeling, R.W. Knudsen</h3>
           <span class="project-tags">CPG | Python | Tableau</span>
-          <p>Built regression models on Nielsen data to uncover pricing thresholds and promo impacts, improving ROI by 15%.</p>
+          <p>
+            Built regression models on Nielsen sales data to examine pricing thresholds, promotion effects, and retailer-level patterns in the premium juice category.
+          </p>
           <div class="project-links">
-            <a href="https://public.tableau.com/views/PricingElasticityDashboard" target="_blank">Tableau Dashboard</a>
-            <a href="https://github.com/andrewamartei/pricing-elasticity" target="_blank">GitHub Repo</a>
-            </div>
-          </div>
-
-        <!-- Project 2 -->
-        <div class="project-card">
-          <img src="images/icd9_dataset.png" alt="ClinicalBERT Pneumonia Prediction" class="project-img">
-          <h3>ClinicalBERT for Pneumonia Prediction</h3>
-          <span class="project-tags">Healthcare | NLP | Python</span>
-          <p>Fine-tuned ClinicalBERT on ICU notes to predict pneumonia risk, achieving AUC 0.9974 and outperforming structured-data models.</p>
-          <div class="project-links">
-            <a href="https://github.com/andrewamatei/ClinicalBert" target="_blank">GitHub Repo</a>
-            </div>
-          </div>
-
-        <!-- Project 3 -->
-        <div class="project-card">
-          <img src="images/nearpeer-retention.png" alt="Nearpeer Retention Modeling" class="project-img">
-          <h3>Nearpeer Retention Modeling</h3>
-          <span class="project-tags">Logistic Regression | SQL | scikit-learn</span>
-          <p>Developed classification model to identify at-risk students, boosting retention rates by 12% in one semester.</p>
-          <div class="project-links">
-            <a href="https://github.com/andrewamartei/nearpeer-retention" target="_blank">GitHub Repo</a>
-            </div>
-          </div>
-
-        <!-- Project 4 -->
-        <div class="project-card">
-          <img src="images/sales-forecasting.png" alt="Sales Forecasting" class="project-img">
-          <h3>Sales Forecasting for Retail Chain</h3>
-          <span class="project-tags">Retail | Time Series | Python | Power BI</span>
-          <p>Created ARIMA and Prophet models for 36 months of sales data, improving forecast accuracy to 92% and reducing stockouts by 18%.</p>
-          <div class="project-links">
-            <a href="https://app.powerbi.com/view?r=SalesForecastingDashboard" target="_blank">Power BI View</a>
-            <a href="https://github.com/andrewamartei/sales-forecasting" target="_blank">GitHub Repo</a>
-            </div>
-          </div>
-
-        <!-- Project 5 -->
-        <div class="project-card">
-          <img src="images/customer-segmentation.png" alt="Customer Segmentation" class="project-img">
-          <h3>Customer Segmentation with Clustering</h3>
-          <span class="project-tags">Marketing | Clustering | Python | Tableau</span>
-          <p>Applied K-Means clustering to 500K customer records, identifying 5 high-value segments that improved CTR by 25%.</p>
-          <div class="project-links">
-            <a href="https://public.tableau.com/views/CustomerSegmentation" target="_blank">Tableau Dashboard</a>
-            <a href="https://github.com/andrewamartei/customer-segmentation" target="_blank">GitHub Repo</a>
-            </div>
+            <a
+              href="https://public.tableau.com/views/PricingElasticityDashboard"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Tableau Dashboard
+            </a>
+            <a
+              href="https://github.com/andrewamartei/pricing-elasticity"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub Repo
+            </a>
           </div>
         </div>
-      </section>
+
+        <div class="project-card">
+          <img
+            src="images/icd9_dataset.png"
+            alt="ClinicalBERT pneumonia prediction project preview"
+            class="project-img"
+            loading="lazy"
+            decoding="async"
+            width="800"
+            height="450"
+          />
+          <h3>ClinicalBERT for Pneumonia Prediction</h3>
+          <span class="project-tags">Healthcare | Natural Language Processing (NLP) | Python</span>
+          <p>
+            Fine-tuned ClinicalBERT on Intensive Care Unit, ICU, notes to predict pneumonia risk and compared performance with structured-data approaches.
+          </p>
+          <div class="project-links">
+            <a
+              href="https://github.com/andrewamartei/ClinicalBert"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub Repo
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="images/nearpeer-retention.png"
+            alt="Nearpeer retention modeling project preview"
+            class="project-img"
+            loading="lazy"
+            decoding="async"
+            width="800"
+            height="450"
+          />
+          <h3>Nearpeer Retention Modeling</h3>
+          <span class="project-tags">Logistic Regression | SQL | Scikit-learn</span>
+          <p>
+            Developed a classification model to identify students at risk of disengagement and support early intervention planning.
+          </p>
+          <div class="project-links">
+            <a
+              href="https://github.com/andrewamartei/nearpeer-retention"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub Repo
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="images/sales-forecasting.png"
+            alt="Sales forecasting project preview"
+            class="project-img"
+            loading="lazy"
+            decoding="async"
+            width="800"
+            height="450"
+          />
+          <h3>Sales Forecasting for Retail Chain</h3>
+          <span class="project-tags">Retail | Time Series | Python | Power BI</span>
+          <p>
+            Built time series forecasting models using historical sales data to support inventory planning and reporting.
+          </p>
+          <div class="project-links">
+            <a
+              href="https://app.powerbi.com/view?r=SalesForecastingDashboard"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Power BI View
+            </a>
+            <a
+              href="https://github.com/andrewamartei/sales-forecasting"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub Repo
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="images/customer-segmentation.png"
+            alt="Customer segmentation project preview"
+            class="project-img"
+            loading="lazy"
+            decoding="async"
+            width="800"
+            height="450"
+          />
+          <h3>Customer Segmentation with Clustering</h3>
+          <span class="project-tags">Marketing | Clustering | Python | Tableau</span>
+          <p>
+            Applied clustering methods to customer data to identify meaningful segments and support targeted marketing analysis.
+          </p>
+          <div class="project-links">
+            <a
+              href="https://public.tableau.com/views/CustomerSegmentation"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Tableau Dashboard
+            </a>
+            <a
+              href="https://github.com/andrewamartei/customer-segmentation"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub Repo
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
     <!-- Experience -->
     <section id="experience">
       <h2>Work Experience</h2>
       <div class="experience-container">
         <article class="experience-item">
-          <h3>Peer Tutor — Northeastern University</h3>
-          <span class="experience-dates">2024 – 2025</span>
+          <h3>Peer Tutor, Northeastern University</h3>
+          <span class="experience-dates">2024 to 2025</span>
           <ul>
-            <li>Guided students in Python, SQL, Power BI, and modeling techniques</li>
-            <li>Facilitated analytics labs and advised on data cleaning, regression, and dashboard design</li>
+            <li>Supported students in Python, Structured Query Language, SQL, Power BI, and data analysis workflows</li>
+            <li>Helped with data cleaning, regression, dashboard design, and project-based problem solving</li>
           </ul>
         </article>
 
         <article class="experience-item">
-          <h3>IT Manager — Progress Savings and Loans Ltd</h3>
-          <span class="experience-dates">2020 – 2023</span>
+          <h3>IT Manager, Progress Savings and Loans Ltd</h3>
+          <span class="experience-dates">2020 to 2023</span>
           <ul>
-            <li>Directed IT infrastructure upgrades, improving system uptime and automating performance tracking</li>
-            <li>Managed enterprise systems across departments and led digital process improvements</li>
+            <li>Led infrastructure upgrades and supported system performance monitoring across business operations</li>
+            <li>Managed enterprise systems and helped improve reporting and digital processes across departments</li>
           </ul>
         </article>
 
         <article class="experience-item">
-          <h3>IT Manager — B-One Savings and Loans Ltd</h3>
-          <span class="experience-dates">2018 – 2020</span>
+          <h3>IT Manager, B-One Savings and Loans Ltd</h3>
+          <span class="experience-dates">2018 to 2020</span>
           <ul>
-            <li>Designed and maintained secure network architecture, resolving 95% of tech issues within SLA</li>
-            <li>Used analytics to optimize ticket response time and user satisfaction</li>
+            <li>Maintained secure network and systems operations across the organization</li>
+            <li>Used service and operations data to monitor response times and improve support delivery</li>
           </ul>
         </article>
 
         <article class="experience-item">
-          <h3>IT Manager — Christian Community Microfinance Ltd</h3>
-          <span class="experience-dates">2011 – 2018</span>
+          <h3>IT Infrastructure Support Manager, Christian Community Microfinance Ltd</h3>
+          <span class="experience-dates">2011 to 2018</span>
           <ul>
-            <li>Oversaw multi-branch IT operations and led core banking migration with zero data loss</li>
-            <li>Standardized backup, compliance audits, and recovery protocols to reduce system risk</li>
+            <li>Oversaw multi-branch IT operations and supported banking system migration efforts</li>
+            <li>Improved backup, recovery, and compliance processes to reduce operational risk</li>
           </ul>
         </article>
       </div>
@@ -154,50 +324,75 @@
       <h2>Education</h2>
       <div class="education-container">
         <div class="education-item">
-          <h3>M.P.S.: Data Analytics</h3>
-          <p class="education-details">Northeastern University — USA</p>
-          <p class="education-dates">Graduated Mar 2025</p>
+          <h3>Master of Professional Studies, Analytics</h3>
+          <p class="education-details">Northeastern University, United States</p>
+          <p class="education-dates">Completed March 2025</p>
         </div>
         <div class="education-item">
-          <h3>M.Sc. Management Information Systems</h3>
-          <p class="education-details">Coventry University — UK</p>
-          <p class="education-dates">Graduated Sept 2024</p>
+          <h3>Master of Science, Management Information Systems</h3>
+          <p class="education-details">Coventry University, United Kingdom</p>
+          <p class="education-dates">Completed September 2024</p>
         </div>
         <div class="education-item">
-          <h3>B.A. Psychology with Philosophy</h3>
-          <p class="education-details">University of Ghana — GH</p>
-          <p class="education-dates">Graduated May 2007</p>
+          <h3>Bachelor of Arts, Psychology with Philosophy</h3>
+          <p class="education-details">University of Ghana, Ghana</p>
+          <p class="education-dates">Completed May 2007</p>
         </div>
       </div>
     </section>
 
     <!-- Skills -->
     <section id="skills">
-      <h2>My Toolkit</h2>
+      <h2>Skills</h2>
       <div class="skills-container">
-        <div class="skill">Python</div><div class="skill">SQL</div><div class="skill">Microsoft Excel</div>
-        <div class="skill">Power BI</div><div class="skill">Tableau</div><div class="skill">Machine Learning</div>
-        <div class="skill">Predictive Modeling</div><div class="skill">Data Wrangling</div><div class="skill">Data Visualization</div>
-        <div class="skill">Natural Language Processing (NLP)</div><div class="skill">Large Language Models (LLMs)</div>
-        <div class="skill">ETL</div><div class="skill">PostgreSQL</div><div class="skill">Data Modeling</div>
-        <div class="skill">Business Intelligence (BI)</div><div class="skill">Customer Insights</div>
-        <div class="skill">Time Series Analysis</div><div class="skill">NumPy</div><div class="skill">Pandas</div>
-        <div class="skill">Scikit-learn</div><div class="skill">Matplotlib</div><div class="skill">Seaborn</div>
-        <div class="skill">Hugging Face</div><div class="skill">OpenAI</div><div class="skill">Git</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Python</div>
+        <div class="skill">Microsoft Excel</div>
+        <div class="skill">Power BI</div>
+        <div class="skill">Tableau</div>
+        <div class="skill">Pandas</div>
+        <div class="skill">NumPy</div>
+        <div class="skill">Scikit-learn</div>
+        <div class="skill">Data Visualization</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">Predictive Modeling</div>
+        <div class="skill">Time Series Analysis</div>
+        <div class="skill">Natural Language Processing (NLP)</div>
+        <div class="skill">Large Language Models (LLMs)</div>
+        <div class="skill">Extract, Transform, Load (ETL)</div>
+        <div class="skill">PostgreSQL</div>
+        <div class="skill">Data Modeling</div>
+        <div class="skill">Git</div>
       </div>
     </section>
 
     <!-- Contact -->
     <section id="contact">
       <h2>Contact</h2>
-      <p>Let's connect: <a href="mailto:andrewamartei@gmail.com">andrewamartei@gmail.com</a></p>
-      <p><a href="https://www.linkedin.com/in/andrewamartei" target="_blank" rel="noopener">linkedin.com/in/andrewamartei</a></p>
-      <a href="assets/andrew_resume.pdf" class="resume-button" download>Download Resume (PDF)</a>
+      <p>
+        Email:
+        <a href="mailto:andrewamartei@gmail.com">andrewamartei@gmail.com</a>
+      </p>
+      <p>
+        LinkedIn:
+        <a
+          href="https://www.linkedin.com/in/andrewamartei"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          linkedin.com/in/andrewamartei
+        </a>
+      </p>
+      <p>
+        <a href="assets/andrew_resume.pdf" class="resume-button" download>
+          Download Resume (PDF)
+        </a>
+      </p>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Andrew</p>
+    <p>© 2026 Andrew Amartei</p>
   </footer>
 
   <button id="backToTopBtn" title="Go to top" aria-label="Back to top">
